@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Food LLC</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>FOOD,LLC</h1>
+        <!-- <div class="aside collapse">
+            <a href="chicken">chicken</a>
+            <a href="beef">beef</a>
+            <a href="sushi">sushi</a>
+        </div> -->
+        <div class="btn-sider" id="btn-sider"></div>
+    </header>
+    <aside id="sider">
+        <nav>
+            <a href="#chicken">chicken</a>
+            <a href="#beef">beef</a>
+            <a href="#sushi">sushi</a>
+        </nav>
+    </aside>
+    <div class="container ">
+        <h1>Our Menu</h1>
+        <div class="card modal-xl modal-lg modal-xl modal-sm" id="chicken">
+            <h2>CHICKEN</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo aliquid neque consequatur obcaecati consequuntur incidunt.
+                 Porro eligendi consequatur temporibus, in voluptas, deleniti hic beatae inventore officia nulla suscipit est!
+            </p>
+        </div>
+        <div class="card modal-xl modal-lg modal-xl modal-sm" id="beef">
+            <h2>BEEF</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo aliquid neque consequatur obcaecati consequuntur incidunt.
+                Porro eligendi consequatur temporibus, in voluptas, deleniti hic beatae inventore officia nulla suscipit est!
+            </p>
+        </div>
+        <div class="card modal-lg  modal-sm modal-mg" id="sushi">
+            <h2>SUSHI</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo aliquid neque consequatur obcaecati consequuntur incidunt.
+                Porro eligendi consequatur temporibus, in voluptas, deleniti hic beatae inventore officia nulla suscipit est!
+            </p>
+        </div>
+    </div>
+    <script>
+        var btnSider = document.getElementById('btn-sider');
+        var sider = document.getElementById('sider');
+        btnSider.onclick = function () {
+            sider.classList.toggle('show');
+            btnSider.classList.toggle('c');
+        }
+    </script>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+</body>
+
+</html>

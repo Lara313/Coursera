@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+}
+.container h1 {
+  width: 100%;
+  text-align: center;
+  color: #0aa01c;
+}
+.card {
+  padding: 20px;
+  font-size: 18px;
+}
+.card h2 {
+  text-align: center;
+  color: #0aa01c;
+}
+@media (min-width: 924px) {
+    header .btn-sider {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+}
+@media (max-width: 924px) {
+  header .btn-sider {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  header .btn-sider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 33px;
+    height: 4px;
+    background-color: #256c2e;
+    border-radius: 3px;
+    transition: all 0.3s;
+  }
+
+  header .btn-sider::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+    width: 33px;
+    height: 4px;
+    background-color:  #256c2e;
+    border-radius: 3px;
+    transition: all 0.3s;
+  }
+
+  .btn-sider.c::before {
+    transform: rotate(225deg);
+    top: 18px;
+    transition: all 0.3s;
+  }
+
+  .btn-sider.c::after {
+    transform: rotate(135deg);
+    bottom: 18px;
+    transition: all 0.3s;
+  }
+
+  aside {
+    width: 100%;
+    background-color: #4b4949c0;
+    scale: 0;
+    text-align: center;
+    backdrop-filter: blur(3px);
+  }
+  aside nav a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 3px solid #224e27;
+    color: #a607a1;
+}
+
+aside nav a:hover {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+aside.show {
+    scale: 1;
+    z-index: 111;
+}
+}
